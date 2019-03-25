@@ -1,0 +1,938 @@
+/* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('fonts/Futura-Medium.ttf');
+}
+
+.font-futuraMedium {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+}
+@media (min-resolution: 120dpi) {
+  .font-futuraMedium {
+    font-family: 'Futura-Medium', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  }
+}
+
+/* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
+@font-face {
+  font-family: 'AppleGothic';
+  src: url('fonts/AppleGothic.ttf');
+}
+
+.font-appleGothic {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+}
+@media (min-resolution: 120dpi) {
+  .font-appleGothic {
+    font-family: 'AppleGothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  }
+}
+
+.App { /* Base font style */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 15.1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0, 0, 0, 0.8500);
+  background-color: #f6f6f6;
+}
+
+.App .baseFont * { /* Base font style override for UI framework components */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 15.1px;
+}
+
+.App .appBg {
+  background-color: #f6f6f6;
+}
+
+.App .cardBg {
+  background-color: white;
+}
+
+.App .baseTextBg { /* Base text color as background */
+  background-color: rgba(0, 0, 0, 0.8500);
+}
+
+.App .secondaryTextColor {
+  color: rgba(0, 0, 0, 0.5000);
+}
+
+.App .secondaryTextBg {
+  background-color: rgba(0, 0, 0, 0.5000);
+}
+
+.App .primaryTextColor {
+  color: #bee9ee;
+}
+
+.App .primaryBg {
+  background-color: #bee9ee;
+}
+
+.App .highlightTextColor {
+  color: #0093d5;
+}
+
+.App .highlightBg {
+  background-color: #0093d5;
+}
+
+/* Styles to customize the UI framework plugin (MUI, https://muicss.com) */
+.mui-btn {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mui-btn--primary {
+    background-color: #bee9ee;
+}
+.mui-btn--primary:active, .mui-btn--primary:focus, .mui-btn--primary:hover {
+    background-color: #c3ebf0;
+}
+.mui-btn--accent {
+    background-color: #0093d5;
+}
+.mui-btn--accent:active, .mui-btn--accent:focus, .mui-btn--accent:hover {
+    background-color: #069fda;
+}
+.mui-textfield {  /* Reset UI framework styling that affects layout */
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.mui-checkbox, .mui-radio {  /* Reset UI framework styling that affects layout */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mui-select {  /* Reset UI framework styling that affects layout */
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.mui-btn+.mui-btn {  /* Reset UI framework styling that affects layout */
+    margin-left: 0;
+}
+.mui-btn--fab {  /* Reset UI framework styling that breaks compositing */
+    z-index: auto;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes slideIn_right {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+@keyframes slideIn_bottom {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+/* App-wide text styles specified in React Studio */
+.App .actionFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 14.2px;
+  font-weight: 400;
+}
+.App .actionFont * {
+  font-size: 14.2px;
+}
+.App .headlineFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 19.4px;
+  font-weight: 400;
+}
+.App .headlineFont * {
+  font-size: 19.4px;
+}
+.App .navBar {
+  background-color: #bee9ee;
+  color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 63px;
+  min-height: 63px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+.App .navBar a {
+  color: black;
+}
+
+.App .navBar .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  margin-top: 13px;
+}
+
+.App .navBar .backBtn {
+  position: absolute;
+  padding: 4px;
+  margin-left: 14px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .mui-container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 568px) {
+  .mui-container {
+    max-width: 568px;
+  }
+}
+@media (min-width: 768px) {
+  .mui-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .mui-container {
+    max-width: 1024px;
+  }
+}
+
+.AppScreen {
+  padding-left: 0;
+  padding-right: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.App .background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.App .layoutFlow {
+  position: relative;
+  width: 100%;
+  pointer-events: none;
+}
+.App .layoutFlow:before {  /* Prevent margin collapse */
+  content: "";
+  display: table;
+  clear: both;
+}
+.App .layoutFlow .flowRow {
+  position: relative;
+  width: 100%;
+}
+
+.App .screenFgContainer {
+  /* Items in the foreground group within a screen are placed with fixed positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.App .foreground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.App ul {
+  margin: 0;
+  padding: 0;
+}
+.App li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+.App .hasNestedComps {
+  position: relative;
+}
+.App .hasNestedComps:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.App .hasNestedComps .background {
+  position: absolute;
+}
+.App .hasNestedComps .layoutFlow {
+  position: relative;
+}
+.App .bottomAlignedContent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.App .blockInputOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: auto;
+  z-index: 99999999;
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .background > .elBackground {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    top: 37px;
+    width: 247px;
+    height: 42px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
+    overflow: hidden;
+    left: 20px;
+    top: 37px;
+    width: 247px;
+    height: 42px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
+    overflow: hidden;
+    left: 20px;
+    top: 36px;
+    width: 245px;
+    height: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
+    overflow: hidden;
+    left: 20px;
+    top: 36px;
+    width: 245px;
+    height: 42px;
+  }
+}
+
+.UserquestionnaireScreen .elSave {
+  border: 0.0px solid transparent;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
+    line-height: 35px;
+    position: absolute;
+    left: calc(50.0% + -75px - 64px);
+    top: 402px;
+    width: 129px;
+    height: 35px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
+    line-height: 35px;
+    left: calc(50.0% + -75px - 64px);
+    top: 402px;
+    width: 129px;
+    height: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
+    line-height: 35px;
+    left: calc(50.0% + -74px - 64px);
+    top: 399px;
+    width: 128px;
+    height: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
+    line-height: 35px;
+    left: calc(50.0% + -74px - 64px);
+    top: 399px;
+    width: 128px;
+    height: 35px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
+    position: absolute;
+    left: 20px;
+    top: 342px;
+    width: 228px;
+    height: 30px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
+    left: 20px;
+    top: 342px;
+    width: 228px;
+    height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
+    left: 20px;
+    top: 340px;
+    width: 227px;
+    height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
+    left: 20px;
+    top: 340px;
+    width: 227px;
+    height: 30px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    width: 226px;
+    height: 34px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
+    left: 20px;
+    top: 140px;
+    width: 226px;
+    height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
+    left: 20px;
+    top: 140px;
+    width: 225px;
+    height: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
+    left: 20px;
+    top: 140px;
+    width: 225px;
+    height: 34px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    top: 316px;
+    width: 237px;
+    height: 22px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    left: 20px;
+    top: 316px;
+    width: 237px;
+    height: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    left: 20px;
+    top: 314px;
+    width: 236px;
+    height: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    left: 20px;
+    top: 314px;
+    width: 236px;
+    height: 22px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    top: 76px;
+    width: 81px;
+    height: 22px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
+    overflow: hidden;
+    left: 20px;
+    top: 76px;
+    width: 81px;
+    height: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
+    overflow: hidden;
+    left: 20px;
+    top: 75px;
+    width: 80px;
+    height: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
+    overflow: hidden;
+    left: 20px;
+    top: 75px;
+    width: 80px;
+    height: 22px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
+    overflow: hidden;
+    position: absolute;
+    left: 97px;
+    top: 76px;
+    width: 81px;
+    height: 22px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
+    overflow: hidden;
+    left: 97px;
+    top: 76px;
+    width: 81px;
+    height: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
+    overflow: hidden;
+    left: 97px;
+    top: 75px;
+    width: 80px;
+    height: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
+    overflow: hidden;
+    left: 97px;
+    top: 75px;
+    width: 80px;
+    height: 22px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
+    position: absolute;
+    left: 20px;
+    top: 184px;
+    width: 226px;
+    height: 34px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
+    left: 20px;
+    top: 184px;
+    width: 226px;
+    height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
+    left: 20px;
+    top: 182px;
+    width: 225px;
+    height: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
+    left: 20px;
+    top: 182px;
+    width: 225px;
+    height: 34px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
+    position: absolute;
+    left: 20px;
+    top: 226px;
+    width: 226px;
+    height: 34px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
+    left: 20px;
+    top: 226px;
+    width: 226px;
+    height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
+    left: 20px;
+    top: 225px;
+    width: 225px;
+    height: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
+    left: 20px;
+    top: 225px;
+    width: 225px;
+    height: 34px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
+    position: absolute;
+    left: 20px;
+    top: 270px;
+    width: 226px;
+    height: 34px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
+    left: 20px;
+    top: 270px;
+    width: 226px;
+    height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
+    left: 20px;
+    top: 268px;
+    width: 225px;
+    height: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
+    left: 20px;
+    top: 268px;
+    width: 225px;
+    height: 34px;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LogingateScreen > .background > .elBackground {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .LogingateScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .LogingateScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .LogingateScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 202px;
+    margin-left: calc(50.0% - 109px);
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
+    width: 100%;
+  height: 163px;
+  }
+  
+@media (min-width: 568px) {
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 202px;
+    margin-left: calc(50.0% - 109px);
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
+    width: 100%;
+  height: 163px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 201px;
+    margin-left: calc(50.0% - 108px);
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
+    width: 100%;
+  height: 162px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 201px;
+    margin-left: calc(50.0% - 108px);
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
+    width: 100%;
+  height: 162px;
+  }
+  
+}
+
+/* This component has a fixed-size layout */
+  .Socialsignin {
+    min-height: 311px;
+    min-width: 250px;
+     /* This component has a fixed size */
+  }
+  .Socialsignin > .background > .containerMinHeight {
+    min-height: 311px;
+  }
+
+  .Socialsignin .elList:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .Socialsignin .elList .gridItem {
+    float: left;
+    position: relative;
+  }
+
+@media (min-width: 1024px) {
+  .Socialsignin .elList .gridItem {
+    width: calc(100% / 2 - 9.0px*(1/2));
+    overflow: hidden;
+  }
+
+  .Socialsignin .elList .cols2_0 {
+    margin-right: 9.0px;
+    margin-bottom: 9.0px;
+    clear: left;
+  }
+  .Socialsignin .elList .cols2_1 {
+    margin-bottom: 9.0px;
+  }
+  .Socialsignin .elList .cols2_1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .Socialsignin .elList .gridItem {
+    width: calc(100% / 2 - 9.0px*(1/2));
+    overflow: hidden;
+  }
+
+  .Socialsignin .elList .cols2_0 {
+    margin-right: 9.0px;
+    margin-bottom: 9.0px;
+    clear: left;
+  }
+  .Socialsignin .elList .cols2_1 {
+    margin-bottom: 9.0px;
+  }
+  .Socialsignin .elList .cols2_1:after { }
+  .Socialsignin .elList .cols2_1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .Socialsignin .elList .gridItem {
+    width: calc(100% / 2 - 9.1px*(1/2));
+    overflow: hidden;
+  }
+
+  .Socialsignin .elList .cols2_0 { margin-right: 0; margin-bottom: 0; }
+  .Socialsignin .elList .cols2_1 { margin-right: 0; margin-bottom: 0; }
+  .Socialsignin .elList .cols2_0 {
+    margin-right: 9.1px;
+    margin-bottom: 9.1px;
+    clear: left;
+  }
+  .Socialsignin .elList .cols2_1 {
+    margin-bottom: 9.1px;
+  }
+  .Socialsignin .elList .cols2_1:after { }
+  .Socialsignin .elList .cols2_1:after { }
+  .Socialsignin .elList .cols2_1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@media (max-width: 567px) {
+  .Socialsignin .elList .gridItem {
+    width: calc(100% / 2 - 9.1px*(1/2));
+    overflow: hidden;
+  }
+
+  .Socialsignin .elList .cols2_0 { margin-right: 0; margin-bottom: 0; }
+  .Socialsignin .elList .cols2_1 { margin-right: 0; margin-bottom: 0; }
+  .Socialsignin .elList .cols2_0 { margin-right: 0; margin-bottom: 0; }
+  .Socialsignin .elList .cols2_1 { margin-right: 0; margin-bottom: 0; }
+  .Socialsignin .elList .cols2_0 {
+    margin-right: 9.1px;
+    margin-bottom: 9.1px;
+    clear: left;
+  }
+  .Socialsignin .elList .cols2_1 {
+    margin-bottom: 9.1px;
+  }
+  .Socialsignin .elList .cols2_1:after { }
+  .Socialsignin .elList .cols2_1:after { }
+  .Socialsignin .elList .cols2_1:after { }
+  .Socialsignin .elList .cols2_1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+
+
+  .Socialsignin > .layoutFlow > .elList {
+    position: relative;
+    margin-top: 4px;
+    width: 0px;
+    margin-left: 118px;
+  }
+  .Socialsignin > .layoutFlow > .elList > * { 
+  width: 0px;
+  }
+  
+
+
+  .Socialsignin > .layoutFlow > .elImage {
+    position: relative;
+    margin-top: -179px;
+    width: 136px;
+    margin-left: 56px;
+  }
+  .Socialsignin > .layoutFlow > .elImage > * { 
+  width: 136px;
+  height: 77px;
+  }
+  
+
