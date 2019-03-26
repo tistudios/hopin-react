@@ -64,12 +64,12 @@ export default class UserquestionnaireScreen extends Component {
     };
     row = { ...row, 
       userId: (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_uID'] : ''),
-      WorkAddr: this.state.workAddr,
+      isDriver: this.state.driver,
       HomeAddr: this.state.homeAddr,
       document_key: (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_uID'] : ''),
       CompanyName: this.state.companyName,
       PhoneNumber: this.state.phoneNumber,
-      isDriver: this.state.driver,
+      WorkAddr: this.state.workAddr,
     };
     this.props.appActions.addToDataSheet('users', row);
   }
@@ -96,7 +96,7 @@ export default class UserquestionnaireScreen extends Component {
         backgroundColor: '#f6f6f6',
      };
     const style_elText = {
-        fontSize: 23.7,
+        fontSize: 19.4,
         color: 'black',
         textAlign: 'left',
      };
@@ -166,7 +166,7 @@ export default class UserquestionnaireScreen extends Component {
         </div>
         <div className="screenFgContainer">
           <div className="foreground">
-            <div className='font-futuraMedium  elText' style={style_elText}>
+            <div className='font-SFUITextRegular  elText' style={style_elText}>
               <div>{this.props.locStrings.screen3_text_28482}</div>
             </div>
             <Button className='actionFont elSave' style={style_elSave}  color="accent" onClick={this.onClick_elSave} >
