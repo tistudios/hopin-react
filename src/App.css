@@ -420,7 +420,7 @@
     position: absolute;
     left: calc(0.0% + 0px);
     right: calc(0.0% + 0px);
-    top: 344px;
+    top: 347px;
     width: 100.0%;
     height: 30px;
   }
@@ -428,7 +428,7 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
     left: calc(0.0% + 0px);
     right: calc(0.0% + 0px);
-    top: 344px;
+    top: 347px;
     width: 100.0%;
     height: 30px;
   }
@@ -437,7 +437,7 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
     left: calc(0.0% + 0px);
     right: calc(0.0% + 0px);
-    top: 342px;
+    top: 345px;
     width: 100.0%;
     height: 30px;
   }
@@ -446,7 +446,7 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
     left: calc(0.0% + 0px);
     right: calc(0.0% + 0px);
-    top: 342px;
+    top: 345px;
     width: 100.0%;
     height: 30px;
   }
@@ -814,7 +814,7 @@
   .LogingateScreen > .layoutFlow > .elFirebaseLogin {
     position: relative;
     margin-top: 187px;
-    margin-left: 0.0%;
+    margin-left: -0.0%;
     margin-right: 0.0%;
     width: calc(100.0% - 0px);
   }
