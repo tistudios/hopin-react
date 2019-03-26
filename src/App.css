@@ -1,20 +1,5 @@
 /* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
 @font-face {
-  font-family: 'Futura-Medium';
-  src: url('fonts/Futura-Medium.ttf');
-}
-
-.font-futuraMedium {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
-}
-@media (min-resolution: 120dpi) {
-  .font-futuraMedium {
-    font-family: 'Futura-Medium', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
-  }
-}
-
-/* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
-@font-face {
   font-family: 'AppleGothic';
   src: url('fonts/AppleGothic.ttf');
 }
@@ -25,6 +10,21 @@
 @media (min-resolution: 120dpi) {
   .font-appleGothic {
     font-family: 'AppleGothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  }
+}
+
+/* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
+@font-face {
+  font-family: 'SFUIText-Regular';
+  src: url('fonts/BF396DF7D0C0-Regular.otf');
+}
+
+.font-SFUITextRegular {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+}
+@media (min-resolution: 120dpi) {
+  .font-SFUITextRegular {
+    font-family: 'SFUIText-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
   }
 }
 
@@ -334,35 +334,39 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
     overflow: hidden;
     position: absolute;
-    left: 20px;
-    top: 37px;
-    width: 247px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 32px;
+    width: 100.0%;
     height: 42px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
     overflow: hidden;
-    left: 20px;
-    top: 37px;
-    width: 247px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 26px;
+    width: 100.0%;
     height: 42px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
     overflow: hidden;
-    left: 20px;
-    top: 36px;
-    width: 245px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 40px;
+    width: 100.0%;
     height: 42px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elText {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 36px;
-    width: 245px;
+    width: 100.0%;
     height: 42px;
   }
 }
@@ -377,7 +381,7 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
     line-height: 35px;
     position: absolute;
-    left: calc(50.0% + -75px - 64px);
+    right: calc(0.0% + 0px);
     top: 402px;
     width: 129px;
     height: 35px;
@@ -385,7 +389,7 @@
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
     line-height: 35px;
-    left: calc(50.0% + -75px - 64px);
+    right: calc(0.0% + 0px);
     top: 402px;
     width: 129px;
     height: 35px;
@@ -394,7 +398,7 @@
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
     line-height: 35px;
-    left: calc(50.0% + -74px - 64px);
+    right: calc(0.0% + 0px);
     top: 399px;
     width: 128px;
     height: 35px;
@@ -403,7 +407,7 @@
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elSave {
     line-height: 35px;
-    left: calc(50.0% + -74px - 64px);
+    right: calc(0.0% + 0px);
     top: 399px;
     width: 128px;
     height: 35px;
@@ -414,32 +418,36 @@
 /* Narrowest size for this element's responsive layout */
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
     position: absolute;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 344px;
+    width: 100.0%;
+    height: 30px;
+  }
+@media (min-width: 568px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 344px;
+    width: 100.0%;
+    height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 342px;
-    width: 228px;
+    width: 100.0%;
     height: 30px;
   }
-@media (min-width: 568px) {
+}
+@media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 342px;
-    width: 228px;
-    height: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
-    left: 20px;
-    top: 340px;
-    width: 227px;
-    height: 30px;
-  }
-}
-@media (min-width: 1024px) {
-  .UserquestionnaireScreen > .screenFgContainer > .foreground > .elDriver {
-    left: 20px;
-    top: 340px;
-    width: 227px;
+    width: 100.0%;
     height: 30px;
   }
 }
@@ -448,32 +456,36 @@
 /* Narrowest size for this element's responsive layout */
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
     position: absolute;
-    left: 20px;
-    top: 140px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 136px;
+    width: 100.0%;
     height: 34px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
-    left: 20px;
-    top: 140px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 136px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
-    left: 20px;
-    top: 140px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 135px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elHomeAddr {
-    left: 20px;
-    top: 140px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 135px;
+    width: 100.0%;
     height: 34px;
   }
 }
@@ -483,35 +495,39 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 316px;
-    width: 237px;
+    width: 100.0%;
     height: 22px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 316px;
-    width: 237px;
+    width: 100.0%;
     height: 22px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 314px;
-    width: 236px;
+    width: 100.0%;
     height: 22px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elTextBlock {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 314px;
-    width: 236px;
+    width: 100.0%;
     height: 22px;
   }
 }
@@ -521,35 +537,39 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
     overflow: hidden;
     position: absolute;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 76px;
-    width: 81px;
+    width: 100.0%;
     height: 22px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 76px;
-    width: 81px;
+    width: 100.0%;
     height: 22px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 75px;
-    width: 80px;
+    width: 100.0%;
     height: 22px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWelcome {
     overflow: hidden;
-    left: 20px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
     top: 75px;
-    width: 80px;
+    width: 100.0%;
     height: 22px;
   }
 }
@@ -559,35 +579,39 @@
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
     overflow: hidden;
     position: absolute;
-    left: 97px;
-    top: 76px;
-    width: 81px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 89px;
+    width: 100.0%;
     height: 22px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
     overflow: hidden;
-    left: 97px;
-    top: 76px;
-    width: 81px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 89px;
+    width: 100.0%;
     height: 22px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
     overflow: hidden;
-    left: 97px;
-    top: 75px;
-    width: 80px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 88px;
+    width: 100.0%;
     height: 22px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elUsn {
     overflow: hidden;
-    left: 97px;
-    top: 75px;
-    width: 80px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 88px;
+    width: 100.0%;
     height: 22px;
   }
 }
@@ -596,32 +620,36 @@
 /* Narrowest size for this element's responsive layout */
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
     position: absolute;
-    left: 20px;
-    top: 184px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 181px;
+    width: 100.0%;
     height: 34px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
-    left: 20px;
-    top: 184px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 181px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
-    left: 20px;
-    top: 182px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 180px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elWorkAddr {
-    left: 20px;
-    top: 182px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 180px;
+    width: 100.0%;
     height: 34px;
   }
 }
@@ -630,32 +658,36 @@
 /* Narrowest size for this element's responsive layout */
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
     position: absolute;
-    left: 20px;
-    top: 226px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 224px;
+    width: 100.0%;
     height: 34px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
-    left: 20px;
-    top: 226px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 224px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
-    left: 20px;
-    top: 225px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 223px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elCompanyName {
-    left: 20px;
-    top: 225px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 222px;
+    width: 100.0%;
     height: 34px;
   }
 }
@@ -664,32 +696,36 @@
 /* Narrowest size for this element's responsive layout */
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
     position: absolute;
-    left: 20px;
-    top: 270px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 267px;
+    width: 100.0%;
     height: 34px;
   }
 @media (min-width: 568px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
-    left: 20px;
-    top: 270px;
-    width: 226px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 267px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 768px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
-    left: 20px;
-    top: 268px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 266px;
+    width: 100.0%;
     height: 34px;
   }
 }
 @media (min-width: 1024px) {
   .UserquestionnaireScreen > .screenFgContainer > .foreground > .elPhoneNumber {
-    left: 20px;
-    top: 268px;
-    width: 225px;
+    left: calc(0.0% + 0px);
+    right: calc(0.0% + 0px);
+    top: 266px;
+    width: 100.0%;
     height: 34px;
   }
 }
@@ -736,9 +772,9 @@
 /* Narrowest size for this element's responsive layout */
   .LogingateScreen > .layoutFlow > .elFirebaseLogin {
     position: relative;
-    margin-top: 202px;
-    margin-left: calc(50.0% - 109px);
-    margin-right: 0px;
+    margin-top: 137px;
+    margin-left: 0.0%;
+    margin-right: 0.0%;
     width: calc(100.0% - 0px);
   }
   .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
@@ -749,9 +785,9 @@
 @media (min-width: 568px) {
   .LogingateScreen > .layoutFlow > .elFirebaseLogin {
     position: relative;
-    margin-top: 202px;
-    margin-left: calc(50.0% - 109px);
-    margin-right: 0px;
+    margin-top: 75px;
+    margin-left: 0.0%;
+    margin-right: 0.0%;
     width: calc(100.0% - 0px);
   }
   .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
@@ -763,9 +799,9 @@
 @media (min-width: 768px) {
   .LogingateScreen > .layoutFlow > .elFirebaseLogin {
     position: relative;
-    margin-top: 201px;
-    margin-left: calc(50.0% - 108px);
-    margin-right: 0px;
+    margin-top: 251px;
+    margin-left: 0.0%;
+    margin-right: 0.0%;
     width: calc(100.0% - 0px);
   }
   .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
@@ -777,9 +813,9 @@
 @media (min-width: 1024px) {
   .LogingateScreen > .layoutFlow > .elFirebaseLogin {
     position: relative;
-    margin-top: 201px;
-    margin-left: calc(50.0% - 108px);
-    margin-right: 0px;
+    margin-top: 187px;
+    margin-left: 0.0%;
+    margin-right: 0.0%;
     width: calc(100.0% - 0px);
   }
   .LogingateScreen > .layoutFlow > .elFirebaseLogin > * { 
@@ -788,151 +824,4 @@
   }
   
 }
-
-/* This component has a fixed-size layout */
-  .Socialsignin {
-    min-height: 311px;
-    min-width: 250px;
-     /* This component has a fixed size */
-  }
-  .Socialsignin > .background > .containerMinHeight {
-    min-height: 311px;
-  }
-
-  .Socialsignin .elList:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .Socialsignin .elList .gridItem {
-    float: left;
-    position: relative;
-  }
-
-@media (min-width: 1024px) {
-  .Socialsignin .elList .gridItem {
-    width: calc(100% / 2 - 9.0px*(1/2));
-    overflow: hidden;
-  }
-
-  .Socialsignin .elList .cols2_0 {
-    margin-right: 9.0px;
-    margin-bottom: 9.0px;
-    clear: left;
-  }
-  .Socialsignin .elList .cols2_1 {
-    margin-bottom: 9.0px;
-  }
-  .Socialsignin .elList .cols2_1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-}
-
-@media (max-width: 1023px) {
-  .Socialsignin .elList .gridItem {
-    width: calc(100% / 2 - 9.0px*(1/2));
-    overflow: hidden;
-  }
-
-  .Socialsignin .elList .cols2_0 {
-    margin-right: 9.0px;
-    margin-bottom: 9.0px;
-    clear: left;
-  }
-  .Socialsignin .elList .cols2_1 {
-    margin-bottom: 9.0px;
-  }
-  .Socialsignin .elList .cols2_1:after { }
-  .Socialsignin .elList .cols2_1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-}
-
-@media (max-width: 767px) {
-  .Socialsignin .elList .gridItem {
-    width: calc(100% / 2 - 9.1px*(1/2));
-    overflow: hidden;
-  }
-
-  .Socialsignin .elList .cols2_0 { margin-right: 0; margin-bottom: 0; }
-  .Socialsignin .elList .cols2_1 { margin-right: 0; margin-bottom: 0; }
-  .Socialsignin .elList .cols2_0 {
-    margin-right: 9.1px;
-    margin-bottom: 9.1px;
-    clear: left;
-  }
-  .Socialsignin .elList .cols2_1 {
-    margin-bottom: 9.1px;
-  }
-  .Socialsignin .elList .cols2_1:after { }
-  .Socialsignin .elList .cols2_1:after { }
-  .Socialsignin .elList .cols2_1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-}
-
-@media (max-width: 567px) {
-  .Socialsignin .elList .gridItem {
-    width: calc(100% / 2 - 9.1px*(1/2));
-    overflow: hidden;
-  }
-
-  .Socialsignin .elList .cols2_0 { margin-right: 0; margin-bottom: 0; }
-  .Socialsignin .elList .cols2_1 { margin-right: 0; margin-bottom: 0; }
-  .Socialsignin .elList .cols2_0 { margin-right: 0; margin-bottom: 0; }
-  .Socialsignin .elList .cols2_1 { margin-right: 0; margin-bottom: 0; }
-  .Socialsignin .elList .cols2_0 {
-    margin-right: 9.1px;
-    margin-bottom: 9.1px;
-    clear: left;
-  }
-  .Socialsignin .elList .cols2_1 {
-    margin-bottom: 9.1px;
-  }
-  .Socialsignin .elList .cols2_1:after { }
-  .Socialsignin .elList .cols2_1:after { }
-  .Socialsignin .elList .cols2_1:after { }
-  .Socialsignin .elList .cols2_1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-}
-
-
-
-  .Socialsignin > .layoutFlow > .elList {
-    position: relative;
-    margin-top: 4px;
-    width: 0px;
-    margin-left: 118px;
-  }
-  .Socialsignin > .layoutFlow > .elList > * { 
-  width: 0px;
-  }
-  
-
-
-  .Socialsignin > .layoutFlow > .elImage {
-    position: relative;
-    margin-top: -179px;
-    width: 136px;
-    margin-left: 56px;
-  }
-  .Socialsignin > .layoutFlow > .elImage > * { 
-  width: 136px;
-  height: 77px;
-  }
-  
 
