@@ -573,9 +573,9 @@
     overflow: hidden;
     position: relative;
     margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 5.0%;
+    margin-right: calc(5.0% + 0px);
+    width: calc(90.0% - 0px);
   }
   .FormComp > .layoutFlow > .state0_elHopinHeader > * { 
     width: 100%;
@@ -596,9 +596,9 @@
   .FormComp > .layoutFlow > .state0_elWelcomeUserText {
     position: relative;
     margin-top: 6px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 5.0%;
+    margin-right: calc(5.0% + 0px);
+    width: calc(90.0% - 0px);
   }
   .FormComp > .layoutFlow > .state0_elWelcomeUserText > * { 
     width: 100%;
@@ -619,9 +619,9 @@
   .FormComp > .layoutFlow > .state0_elUserForm623893 {
     position: relative;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 5.0%;
+    margin-right: calc(5.0% + 0px);
+    width: calc(90.0% - 0px);
   }
   .FormComp > .layoutFlow > .state0_elUserForm623893 > * { 
     width: 100%;
@@ -638,9 +638,9 @@
     line-height: 47px;
     position: relative;
     margin-top: 32px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 5.0%;
+    margin-right: calc(5.0% + 0px);
+    width: calc(90.0% - 0px);
   }
   .FormComp > .layoutFlow > .state0_elSave > * { 
     width: 100%;
@@ -671,9 +671,9 @@
   .FormComp > .layoutFlow > .state1_elUserForm623893 {
     position: relative;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 5.0%;
+    margin-right: calc(5.0% + 0px);
+    width: calc(90.0% - 0px);
   }
   .FormComp > .layoutFlow > .state1_elUserForm623893 > * { 
     width: 100%;
