@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LocalizedStrings from 'react-localization';
 import './App.css';
+import TYScreen from './TYScreen.js';
 import UserquestionnaireScreen from './UserquestionnaireScreen.js';
 import LogingateScreen from './LogingateScreen.js';
 import DataSheet_localizationSheet from './DataSheet_localizationSheet.js';
@@ -30,6 +31,7 @@ export default class App extends Component {
     this.dataSlots['ds_driver?'] = "";
     this.dataSlots['ds_companyName'] = "";
     this.dataSlots['ds_phone'] = "";
+    this.dataSlots['ds_done'] = "";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
 
@@ -306,10 +308,13 @@ export default class App extends Component {
         'ds_driver?': this.dataSlots['ds_driver?'],
         'ds_companyName': this.dataSlots['ds_companyName'],
         'ds_phone': this.dataSlots['ds_phone'],
+        'ds_done': this.dataSlots['ds_done'],
       };
       switch (screenId) {
         default:
           return null;
+        case 'tyscreen':
+          return (<TYScreen {...screenProps} />)
         case 'userquestionnaire':
           return (<UserquestionnaireScreen {...screenProps} />)
         case 'logingate':

@@ -102,6 +102,101 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     this.items.push(item);
     item['key'] = "screen3_button_632221";
     item['en'] = "Save";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_text_171571";
+    item['en'] = "Hop In Microtransit";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_welcome_19561";
+    item['en'] = "Welcome";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_usn_840532";
+    item['en'] = "saarthak";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_phonenumber_338440";
+    item['en'] = "Phone Number";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_companyname_481599";
+    item['en'] = "Company Name";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_workaddr_678428";
+    item['en'] = "Work Address";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_textblock_847856";
+    item['en'] = "Are you signing up as a driver?";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_homeaddr_992103";
+    item['en'] = "Home Address";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_save_375954";
+    item['en'] = "Save";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp2_welcome_76759";
+    item['en'] = "Welcome";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp2_usn_740352";
+    item['en'] = "saarthak";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "thankyou_textblock_302988";
+    item['en'] = "Thank you";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "thankyou_textblock2_994450";
+    item['en'] = "Please check back in a couple hours for your new ride groups.";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "logingate_text_892011";
+    item['en'] = "Please wait….";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp3_phonenumber_859601";
+    item['en'] = "Phone Number";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp3_companyname_538984";
+    item['en'] = "Company Name";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp3_workaddr_889849";
+    item['en'] = "Work Address";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp3_homeaddr_1012641";
+    item['en'] = "Home Address";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp3_textblock_11615";
+    item['en'] = "Are you signing up as a driver?";
   }
 
   getStringsByLanguage = () => {

@@ -25,6 +25,39 @@ export default class DataSheet_users extends DataSheetBase {
     item['PhoneNumber'] = "test";
     item['isDriver'] = "1";
     item.key = key++;
+    
+    item = {};
+    this.items.push(item);
+    item['userId'] = "L2GgTfzQxvgG6BEXdwQL9EMfMAE3";
+    item['WorkAddr'] = "10 Dundas St. E, Toronto, ON";
+    item['HomeAddr'] = "70 Mill St., Toronto, ON M5A 4R1";
+    item['document_key'] = "L2GgTfzQxvgG6BEXdwQL9EMfMAE3";
+    item['CompanyName'] = "Hop In ";
+    item['PhoneNumber'] = "6472317473";
+    item['isDriver'] = "";
+    item.key = key++;
+    
+    item = {};
+    this.items.push(item);
+    item['userId'] = "L2GgTfzQxvgG6BEXdwQL9EMfMAE3";
+    item['WorkAddr'] = "";
+    item['HomeAddr'] = "";
+    item['document_key'] = "L2GgTfzQxvgG6BEXdwQL9EMfMAE3";
+    item['CompanyName'] = "";
+    item['PhoneNumber'] = "";
+    item['isDriver'] = "";
+    item.key = key++;
+    
+    item = {};
+    this.items.push(item);
+    item['userId'] = "L2GgTfzQxvgG6BEXdwQL9EMfMAE3";
+    item['WorkAddr'] = "test";
+    item['HomeAddr'] = "test";
+    item['document_key'] = "L2GgTfzQxvgG6BEXdwQL9EMfMAE3";
+    item['CompanyName'] = "test";
+    item['PhoneNumber'] = "1231200321";
+    item['isDriver'] = "";
+    item.key = key++;
   }
 
   
