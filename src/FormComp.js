@@ -26,11 +26,8 @@ export default class FormComp extends Component {
     let newVal = "yes";
     this.props.appActions.updateDataSlot('ds_done', newVal);
   
-    // Go back in screen navigation history
-    this.props.appActions.goBack();
-  
     // Go to screen 'TYScreen'
-    this.props.appActions.goToScreen('tyscreen', { transitionId: 'fadeIn' });
+    this.props.appActions.goToScreen('tyscreen', { ...this.props, transitionId: 'fadeIn' });
   
   }
   
@@ -42,12 +39,12 @@ export default class FormComp extends Component {
     };
     row = { ...row, 
       userId: (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_uID'] : ''),
-      WorkAddr: this._state0_elUserForm623893.state.workAddr,
+      isDriver: this._state0_elUserForm623893.state.driver,
       HomeAddr: this._state0_elUserForm623893.state.homeAddr,
       document_key: this._state0_elUserForm623893.state.phoneNumber,
       CompanyName: this._state0_elUserForm623893.state.companyName,
       PhoneNumber: this._state0_elUserForm623893.state.phoneNumber,
-      isDriver: this._state0_elUserForm623893.state.driver,
+      WorkAddr: this._state0_elUserForm623893.state.workAddr,
     };
     if (this.props.dataSheetId === dataSheet.id) {
       this.props.appActions.updateInDataSheet('users', row);

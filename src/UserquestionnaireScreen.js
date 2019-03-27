@@ -41,9 +41,9 @@ export default class UserquestionnaireScreen extends Component {
           
         </div>
         <div className="layoutFlow" style={layoutFlowStyle}>
-          <div className='hasNestedComps state0_elComp'>
+          <div className='hasNestedComps state0_elFormComp772727'>
             <div>
-              <FormComp ref={(el)=> this._state0_elComp = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <FormComp ref={(el)=> this._state0_elFormComp772727 = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           
           </div>
@@ -71,6 +71,15 @@ export default class UserquestionnaireScreen extends Component {
     
     return (
       <div className="AppScreen UserquestionnaireScreen" style={baseStyle}>
+        <div className="layoutFlow" style={layoutFlowStyle}>
+          <div className='hasNestedComps state1_elFormComp772727'>
+            <div>
+              <FormComp ref={(el)=> this._state1_elFormComp772727 = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+            </div>
+          
+          </div>
+          
+        </div>
       </div>
     )
   }
